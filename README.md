@@ -3,6 +3,7 @@ famax
 
 Famax 1.0 - Infinite Facebook fanpage feeds on your website
 Installation details: http://www.codehandling.com/2013/04/famax-10-infinite-facebook-fanpage.html
+<br>
 Demo: http://demos.codehandling.com/myEvents/gcal-events.html
 
 benefits
