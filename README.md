@@ -2,6 +2,11 @@ famax
 =====
 
 Famax 1.0 - Infinite Facebook fanpage feeds on your website
+Installation details: http://www.codehandling.com/2013/04/famax-10-infinite-facebook-fanpage.html
+Demo: http://demos.codehandling.com/myEvents/gcal-events.html
+
+benefits
+========
 
 Famax displays your complete Facebook Fanpage data on your website! You can post images/videos on your fanpage and it will be reflected on your webpage. 
 
@@ -12,5 +17,8 @@ Features:
 - the widget itself is responsive; given a width or % for the widget, the inner contents will resize accordingly.
 - parts of the plugin like header/tabs can be hidden as per requirement.
 
-Complete details about how to use this plugin:
-http://www.codehandling.com/2013/04/famax-10-infinite-facebook-fanpage.html
+author
+======
+Jake Handling
+https://www.facebook.com/codehandling
+
