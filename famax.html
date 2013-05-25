@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Famax 1.0 - Infinite Facebook fanpage feeds on your website</title>
+	
+	<script src="http://code.jquery.com/jquery-1.7.js"></script>
+	
+	<script type="text/javascript">
+	
+	//mandatory----------------
+	var facebookPageUrl = "https://www.facebook.com/adidas";
+	
+	//optional-----------------
+	//var fbAccessToken = "460135344048321|44473b4be8cdf726e70daaff38068ab8";
+	var famaxWidgetWidth = 800; 
+	//var famaxWidgetHeight = 400; 
+	var pathToLoadingImage = './loader.gif';
+	var famaxColumns = 2;
+	
+	function displayFamax() {
+		$('#famax').empty();
+		facebookPageUrl=$('#facebookPageUrl').val();
+		famaxColumns=$('#famaxColumns').val();
+		
+	if(null==facebookPageUrl||facebookPageUrl==""||facebookPageUrl=="undefined")
+		facebookPageUrl = 'https://www.facebook.com/adidas';
+
+	if(null==famaxColumns||famaxColumns==""||famaxColumns=="undefined")
+		famaxColumns = 2;
+
+		prepareFamax();
+	}
+
+	
+	</script>
+
+	<!--<style>#famax>div{ display:none !important;}</style>-->
+	<style>
+
+      body {
+        font-family: Calibri;
+        font-size: 14px;
+		text-align:center;
+      }
+	  
+
+	</style>
+
+	</head>
+  <body>
+	
+		<h1>Famax 1.0 - Infinite Facebook fanpage feeds on your website</h1>
+		Enter your Facebook Page Url: <input type="text" id="facebookPageUrl"/>&nbsp;&nbsp; (Ex: http://www.facebook.com/codehandling)<br>
+		Enter number of columns needed: <input type="text" id="famaxColumns"/>&nbsp;&nbsp; (Ex: 3)<br>
+		<input type="button" value="Go" onclick="displayFamax();">
+		<br/>
+		<br/>
+		
+		<div id="famax">
+		</div>		
+				
+		<br/><br/><br/><br/><br/>
+
+		<script src="./famax.min.js"></script>
+
+		<a style="font-size:15px;" href="http://www.codehandling.com/2013/04/famax-10-infinite-facebook-fanpage.html">See how to use this plugin - at codehandling</a>
+
+
+  </body>
+</html>
+
+
+
