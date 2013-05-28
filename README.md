@@ -22,10 +22,10 @@ Features:
 
 Author
 ======
-Jake Handling
+Jake Handling<br>
 https://www.facebook.com/codehandling
 
 License
 =======
-This plugin is available under the <a href="">GNU General Public License</a>.
+This plugin is available under the <a href="https://github.com/codehandling/famax/blob/master/GNU.md">GNU General Public License</a>.
 
