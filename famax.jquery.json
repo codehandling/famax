@@ -5,9 +5,12 @@
     "keywords": [
         "facebook",
         "fanpage",
-		"feeds"
+		"feeds",
+		"famax",
+		"social",
+		"fb"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": {
         "name": "Jake Handling",
         "url": "https://www.facebook.com/codehandling"
@@ -25,11 +28,9 @@
             "url": "https://github.com/codehandling/famax/blob/master/GNU.md"
         }
     ],
-    "bugs": "https://github.com/jquery/jquery-color/issues",
-    "homepage": "http://www.codehandling.com",
+    "homepage": "http://www.codehandling.com/2013/04/famax-10-infinite-facebook-fanpage.html",
     "docs": "http://www.codehandling.com/2013/04/famax-10-infinite-facebook-fanpage.html",
 	"demo": "http://demos.codehandling.com/famax/famax.html",	
-    "download": "https://www.box.com/s/eezhfxwkx6mpm33jmmph",
     "dependencies": {
         "jquery": ">=1.5"
     }
