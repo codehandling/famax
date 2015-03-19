@@ -1,12 +1,17 @@
 Famax
 =====
 
-Infinite Facebook fanpage feeds on your website
+Complete Facebook fanpage feeds on your website
 <br>
 <br>
-<b>Installation details:</b> http://www.codehandling.com/2013/04/famax-10-infinite-facebook-fanpage.html
+This plugin will embed your Facebook Page Posts and display them gracefully on your website.
 <br>
-<b>Demo:</b> http://demos.codehandling.com/myEvents/gcal-events.html
+<br>
+<b>Documentation:</b> http://www.codehandling.com/2015/03/free-version-of-famax-jquery-plugin-is.html
+<br>
+<b>Demo:</b> http://demos.codehandling.com/famax/famax.html
+<br>
+<b>Premium Version:</b> http://www.codehandling.com/2015/03/famax-40-complete-facebook-fanpage.html
 
 Benefits
 ========
@@ -23,7 +28,7 @@ Features:
 Author
 ======
 Jake Handling<br>
-https://www.facebook.com/codehandling
+https://plus.google.com/+JakeHandling
 
 License
 =======
