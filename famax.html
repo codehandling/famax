@@ -4,34 +4,29 @@
     <title>Famax 1.0 - Infinite Facebook fanpage feeds on your website</title>
 	
 	<script src="http://code.jquery.com/jquery-1.7.js"></script>
+	<link rel="stylesheet" href="./css/famax.min.css"/>
+	<script src="./js/famax.min.js"></script>
 	
 	<script type="text/javascript">
-	
-	//mandatory----------------
-	var facebookPageUrl = "https://www.facebook.com/adidas";
-	
-	//optional-----------------
-	//var fbAccessToken = "460135344048321|44473b4be8cdf726e70daaff38068ab8";
-	var famaxWidgetWidth = 800; 
-	//var famaxWidgetHeight = 400; 
-	var pathToLoadingImage = './loader.gif';
-	var famaxColumns = 2;
-	
-	function displayFamax() {
-		$('#famax').empty();
-		facebookPageUrl=$('#facebookPageUrl').val();
-		famaxColumns=$('#famaxColumns').val();
 		
-	if(null==facebookPageUrl||facebookPageUrl==""||facebookPageUrl=="undefined")
-		facebookPageUrl = 'https://www.facebook.com/adidas';
+	function goFamax() {
+		$('#famax').empty();
+		var facebookPageUrlInput = $('#facebookPageUrl').val();
+		var famaxColumnsInput = $('#famaxColumns').val();
+		$('#famax').famax({
+			//mandatory----------------
+			facebookPageUrl:facebookPageUrlInput,
+			fbAccessToken:"CAAJTO0BbbJUBAE3jj7KpVcLZAZBsaTIUvVH1lv5p7Yc4WmxMdsRddXYrNolfzC3QVLHjyLjsKEskfuEmwtHqJSTYEyPY9cZAhAif3DIQjjSIVTZB5uojFPyjtpeCkV0ykIrY4mlmAEFLdnx2TIFLgbPrFY9amb54nUIEGREAZC885mQuTeUaslOWfQRm187zdYUOD6NFsIHVqXRFpJkVi",
 
-	if(null==famaxColumns||famaxColumns==""||famaxColumns=="undefined")
-		famaxColumns = 2;
-
-		prepareFamax();
+			//optional-----------------
+			famaxWidgetWidth:"800px", //in px or % 
+			//famaxWidgetHeight:"400px",
+			famaxColumns:famaxColumnsInput,
+			famaxResultCount:10
+		});
 	}
-
 	
+
 	</script>
 
 	<!--<style>#famax>div{ display:none !important;}</style>-->
@@ -50,18 +45,23 @@
   <body>
 	
 		<h1>Famax 1.0 - Infinite Facebook fanpage feeds on your website</h1>
-		Enter your Facebook Page Url: <input type="text" id="facebookPageUrl"/>&nbsp;&nbsp; (Ex: http://www.facebook.com/codehandling)<br>
-		Enter number of columns needed: <input type="text" id="famaxColumns"/>&nbsp;&nbsp; (Ex: 3)<br>
-		<input type="button" value="Go" onclick="displayFamax();">
+		Enter your Facebook Page Url: <input type="text" id="facebookPageUrl" value="https://www.facebook.com/nike"/>&nbsp;&nbsp; (Ex: http://www.facebook.com/codehandling)<br>
+		<div style="margin:8px;"></div>
+		Enter number of columns needed: <input type="text" id="famaxColumns" value="2"/>&nbsp;&nbsp; (Ex: 3)<br>
+		<div style="margin:10px;"></div>
+		<input type="button" value="Go Famax!" onclick="goFamax();">
 		<br/>
 		<br/>
 		
-		<div id="famax">
-		</div>		
+		<div id="famax"></div>		
 				
 		<br/><br/><br/><br/><br/>
 
-		<script src="./famax.min.js"></script>
+		
+		
+		<script>
+			goFamax();
+		</script>
 
 		<a style="font-size:15px;" href="http://www.codehandling.com/2013/04/famax-10-infinite-facebook-fanpage.html">See how to use this plugin - at codehandling</a>
 
