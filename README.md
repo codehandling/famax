@@ -13,8 +13,11 @@ This plugin will embed your Facebook Page Posts and display them gracefully on y
 <br>
 <b>Premium Version:</b> http://www.codehandling.com/2015/03/famax-40-complete-facebook-fanpage.html
 
-![alt tag](http://1.bp.blogspot.com/-zR9HYonrm5U/VQlsbjCXZHI/AAAAAAAABYA/z_ylpY1KU6o/s1600/levis.png)
+Screenshots
+========
 
+![alt tag](http://1.bp.blogspot.com/-zR9HYonrm5U/VQlsbjCXZHI/AAAAAAAABYA/z_ylpY1KU6o/s1600/levis.png)
+<br><br>
 ![alt tag](http://1.bp.blogspot.com/-3YnjN8Vp-tU/VQRD8NLW7ZI/AAAAAAAABXk/mN_6mHh9CDI/s1600/famax_nike.png)
 
 Benefits
