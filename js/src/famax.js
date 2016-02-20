@@ -44,13 +44,15 @@ var famax_global_options = {};
 
 	prepareFamax = function() {
 		var famaxPageName = famax_global_options.facebookPageUrl.substring(famax_global_options.facebookPageUrl.lastIndexOf("/")+1);
-		var famaxPageId = getIdFromName(famaxPageName);
-		famax_global_options.famaxPageId = famaxPageId;
+		
 		//console.log
 		//$('#famax').empty().append(famaxPageName+' loading ...');
 		
 		loadFamax();
 		//showLoader();	
+
+		var famaxPageId = getIdFromName(famaxPageName);
+		famax_global_options.famaxPageId = famaxPageId;
 
 		//var fqlUrl = "https://graph.facebook.com/fql?q=SELECT+post_id,actor_id,target_id,message,description,attachment,created_time,updated_time+FROM+stream+WHERE+source_id="+famaxPageId+"+AND+actor_id="+famaxPageId+"+ORDER+BY+created_time+DESC&access_token="+fbAccessToken;
 
@@ -59,9 +61,9 @@ var famax_global_options = {};
 		
 		getPageDetails(apiUrl);
 		
-		var fqlUrl = "http://graph.facebook.com/"+famaxPageId;
+		//var fqlUrl = "http://graph.facebook.com/"+famaxPageId;
 		
-		getPageInfo(fqlUrl);
+		//getPageInfo(fqlUrl);
 		
 	},
 		
@@ -97,7 +99,7 @@ var famax_global_options = {};
 	},
 		
 	showFamax = function(response) {
-		//console.log(response);
+		console.log(response);
 		famax_global_options.nextPageURL = response.paging.next;
 		var streamArray = response.data;
 		var post_id;
@@ -277,9 +279,9 @@ var famax_global_options = {};
 						famax_video_tnail = '<div class="famax-pic-tnail" data-picSrc="'+attachment_display+'" style="width:100%;text-align:center;"><a target="_blank" href="'+attachment_href+'"><img class="video-img"  id="'+fbPost.post_id+'" src="'+attachment_display+'"></a></div>';
 						
 					} else if(attachment_type.indexOf('link')!=-1 || attachment_type.indexOf('share')!=-1) {
-						famax_video_tnail = '<div class="famax-link-tnail" style="width:100%;text-align:center;"><a target="_blank" href="'+attachment_href+'"><i class="_1y4" style="background: url(\'./famax_link.png\') no-repeat 0 0;"></i><img  class="link-img" id="'+fbPost.post_id+'" src="'+attachment_display+'"></a></div>';
+						famax_video_tnail = '<div class="famax-link-tnail" style="width:100%;text-align:center;"><a target="_blank" href="'+attachment_href+'"><i class="_1y4" style="background: url(\'./images/famax_link.png\') no-repeat 0 0;"></i><img  class="link-img" id="'+fbPost.post_id+'" src="'+attachment_display+'"></a></div>';
 					} else if(attachment_type.indexOf('video')!=-1) {
-						famax_video_tnail = '<div class="famax-video-tnail" data-videoSrc="'+attachment_href+'" style="width:100%;text-align:center;"><a target="_blank" href="'+attachment_href+'"><i class="_1y4" style="background: url(\'./famax_video.png\') no-repeat 0 0;"></i><img class="video-img"  id="'+fbPost.post_id+'" src="'+attachment_display+'"></a></div>';
+						famax_video_tnail = '<div class="famax-video-tnail" data-videoSrc="'+attachment_href+'" style="width:100%;text-align:center;"><a target="_blank" href="'+attachment_href+'"><i class="_1y4" style="background: url(\'./images/famax_video.png\') no-repeat 0 0;"></i><img class="video-img"  id="'+fbPost.post_id+'" src="'+attachment_display+'"></a></div>';
 					} else {
 						//assume it is an image or an album
 						famax_video_tnail = '<div class="famax-pic-tnail" data-picSrc="'+attachment_display+'" style="width:100%;text-align:center;"><a target="_blank" href="'+attachment_href+'"><img class="video-img"  id="'+fbPost.post_id+'" src="'+attachment_display+'"></a></div>';
@@ -333,7 +335,7 @@ var famax_global_options = {};
 	},
 	
 	getIdFromName = function(pageName) {
-		var graphLink = "https://graph.facebook.com/"+pageName;
+		var graphLink = "https://graph.facebook.com/"+pageName+"?access_token="+famax_global_options.fbAccessToken;
 		var objectId;
 		
 		$.ajax({
@@ -348,6 +350,7 @@ var famax_global_options = {};
 			dataType: "json",
 			success: function(response){
 				objectId = response.id;
+				showInfo(response);
 			}
 		});		
 		return objectId;
