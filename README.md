@@ -7,6 +7,8 @@ Complete Facebook fanpage feeds on your website
 This plugin will embed your Facebook Page Posts and display them gracefully on your website.
 <br>
 <br>
+<b>Download:</b> http://www.codehandling.com/p/codehandling-free-plugins.html
+<br><br>
 <b>Documentation:</b> http://www.codehandling.com/2015/03/free-version-of-famax-jquery-plugin-is.html
 <br>
 <b>Demo:</b> http://demos.codehandling.com/famax/famax.html
@@ -16,9 +18,7 @@ This plugin will embed your Facebook Page Posts and display them gracefully on y
 Screenshots
 ========
 
-![alt tag](http://1.bp.blogspot.com/-zR9HYonrm5U/VQlsbjCXZHI/AAAAAAAABYA/z_ylpY1KU6o/s1600/levis.png)
-<br><br>
-![alt tag](http://1.bp.blogspot.com/-3YnjN8Vp-tU/VQRD8NLW7ZI/AAAAAAAABXk/mN_6mHh9CDI/s1600/famax_nike.png)
+![alt tag](https://2.bp.blogspot.com/-cDleg-coTFg/V2utC40y0SI/AAAAAAAAB_s/zfk2j8Se118KP0h59DxU4i1Gaa2k0FP6QCLcB/s1600/fmax_screen_1.png)
 
 Benefits
 ========
@@ -39,5 +39,5 @@ https://plus.google.com/+JakeHandling
 
 License
 =======
-This plugin is available under the <a href="https://github.com/codehandling/famax/blob/master/GNU.md">GNU General Public License</a>.
+This plugin is available under the MIT licence under the condition that you cannot re-distribute the plugin.
 
