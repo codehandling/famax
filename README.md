@@ -18,7 +18,7 @@ This plugin will embed your Facebook Page Posts and display them gracefully on y
 Screenshots
 ========
 
-![alt tag](https://2.bp.blogspot.com/-cDleg-coTFg/V2utC40y0SI/AAAAAAAAB_s/zfk2j8Se118KP0h59DxU4i1Gaa2k0FP6QCLcB/s1600/fmax_screen_1.png)
+![alt tag](https://2.bp.blogspot.com/-cDleg-coTFg/V2utC40y0SI/AAAAAAAAB_s/zfk2j8Se118KP0h59DxU4i1Gaa2k0FP6QCLcB/s800/fmax_screen_1.png)
 
 Benefits
 ========
